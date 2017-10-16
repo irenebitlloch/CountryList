@@ -34,7 +34,17 @@ public class CountryListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View item, int pos, long id) {
                 Toast.makeText(CountryListActivity.this,
                         String.format("Has escogido '%s'", country_list.get(pos)),
-                        Toast.LENGTH_SHORT).show();
+                        Toast.LENGTH_SHORT
+                ).show();
+
+            }
+        });
+        list.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View item, int pos, long id) {
+                country_list.remove(pos);
+                adapter.notifyDataSetChanged();
+                return true;
 
             }
         });
