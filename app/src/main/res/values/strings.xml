@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CountryList</string>
+    <string name="confirm">confirm</string>
+    <string name="confirm_message">Are you sure you want to erase</string>
+    <string name="erase">erase</string>
+    <string name="Confirm">Confirm</string>
 </resources>
